@@ -1,0 +1,27 @@
+{
+  "name": "jouley-control-button",
+  "description": "An element responible firing media player control events",
+  "main": "jouley-control-button.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "jouley-icons": "^0.0.2",
+    "iron-icon": "^1.0.9"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/Jouley/jouley-control-button",
+  "_release": "b722cdd14b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b722cdd14b05a7d2a2327b536ca75dfe4d18bade"
+  },
+  "_source": "git://github.com/Jouley/jouley-control-button.git",
+  "_target": "master",
+  "_originalSource": "Jouley/jouley-control-button",
+  "_direct": true
+}

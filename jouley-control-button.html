@@ -18,6 +18,10 @@
         color: rgba(0, 0, 0, 0.38);
         pointer-events: none;
       }
+      :host([control="play"]) iron-icon {
+        width: 48px;
+        height: 48px;
+      }
     </style>
     <iron-icon icon="jouley-icons:[[control]]" on-tap="_fireEvent" on-down="_onDown" on-up="_onUp"></iron-icon>
   </template>
@@ -44,14 +48,14 @@
         Polymer.dom(this._iconElement).icon = value;
       },
 
-      set control(value) {
-        if (value) {
-          this._icon = value;
-        }
-      },
-
       get _iconElement() {
         return Polymer.dom(this.root).querySelector('iron-icon');
+      },
+
+      ready: function() {
+        if (String(this.control) === 'play') {
+          this.control += '-circle';
+        }
       },
 
       _onDown: function() {

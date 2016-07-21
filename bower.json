@@ -4,7 +4,7 @@
   "main": "jouley-control-button.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
-    "jouley-icons": "*",
+    "jouley-icons": "^0.0.2",
     "iron-icon": "^1.0.9"
   },
   "devDependencies": {

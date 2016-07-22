@@ -1,7 +1,7 @@
 {
   "name": "jouley-control-button",
   "description": "An element responible firing media player control events",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "jouley-control-button.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",

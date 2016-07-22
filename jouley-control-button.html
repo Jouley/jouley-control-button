@@ -24,7 +24,7 @@
         height: 48px;
       }
     </style>
-    <iron-icon icon="jouley-icons:[[_control]]" on-tap="_fireEvent" on-down="_onDown" on-up="_onUp"></iron-icon>
+    <iron-icon icon="jouley-icons:[[_icon]]" on-tap="_fireEvent" on-down="_onDown" on-up="_onUp"></iron-icon>
   </template>
 
   <script>
@@ -45,17 +45,9 @@
         }
       },
 
-      set _icon(value) {
-        Polymer.dom(this._iconElement).icon = value;
-      },
-
-      get _iconElement() {
-        return Polymer.dom(this.root).querySelector('iron-icon');
-      },
-
       ready: function() {
         if (String(this.control) === 'play') {
-          this._icon = this.control += '-circle';
+          this._icon = this.control + '-circle';
         } else {
           this._icon = this.control;
         }
